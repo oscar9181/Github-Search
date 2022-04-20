@@ -7,8 +7,8 @@ import { map } from 'rxjs/operators';
 })
 export class ProfileService {
   private username:string
-  private clientid= '902a4af2571ddfa342d3'
-  private clientsecret= '24fea8a1a3416ecdf4360fdd943c8833f24189bf'
+  private clientid= '9f0def4db73b382ea480'
+  private clientsecret= '86bba7937181b01026e4f49ef0284e0ac6976a37'
 
   constructor(private http:HttpClient) { 
     this.username ='oscar9181'
