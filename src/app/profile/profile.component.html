@@ -36,21 +36,21 @@
 
       <div class="col-md-12">
         <div class="row">
-          <div id= "twty"class="col-md-4 card">
+          <div id= "twty"class="col-md-4 card"  *ngFor="let repo of repos">
             <p class="clearfix">
-            
-              <a
-                href="{{ profile.html_url }}"
-                target="_blank"
-                class="btn btn-warning btn-sm float-right"
-                id="btn"
-                >View this project on Github</a
-              >
-            </p>
-            <p>Number of forks: {{ profile.forks }}</p>
-            <p>Description: {{ profile.description }}</p>
-            <p>Language: {{ profile.language }}</p>
-            <div class="date">
+                {{ repo.name }}
+                <a
+                  href="{{ repo.html_url }}"
+                  target="_blank"
+                  class="btn btn-warning btn-sm float-right"
+                  id="btn"
+                  >View this project on Github</a
+                >
+              </p>
+              <p>Number of forks: {{ repo.forks }}</p>
+              <p>Description: {{ repo.description }}</p>
+              <p>Language: {{ repo.language }}</p>
+              <div class="date">
               <small
                 ><span>last modified:</span>{{ profile.updated_at | date }}
 
