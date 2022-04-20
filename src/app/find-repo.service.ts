@@ -17,7 +17,7 @@ export class FindRepoService {
 
   constructor(private http: HttpClient) { }
   getProfileRepos(){
-    return this.http.get(`https://api.github.com/search/repositories?q=${this.repository}&client_secret=${this.clientSecret}`).pipe(map(res => res))
+    return this.http.get(`https://api.github.com/search/repositories?q=${this.repository}&client_secret=${this.clientsecret}`).pipe(map(res => res))
 
   }
   updateProfile(repository: string) {
