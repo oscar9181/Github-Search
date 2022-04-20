@@ -1,3 +1,13 @@
+<form class="m-2">
+    <div class="mb-3">
+      <label for="exampleFormControlInput"class="form-label">Your Github Username</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="e.g oscar9181">
+    </div>
+
+   <button type="submit" class="btn btn-primary btn-block">Search</button>
+
+ </form>
+
 <div *ngIf="profile">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -8,7 +18,7 @@
       <div class="panel-body">
         <div class="row">
           <div class="col-sm-3">
-            <img src="{{profile.avatar_url}}" class="img-circle" img-responsive alt="profile image">
+            <img src="{{profile.avatar_url}}" class="img-circle" img-responsive alt="profile image" style="width: 90%">
 
           </div>
           <li class="list-group-item" *ngIf="profile.email">
