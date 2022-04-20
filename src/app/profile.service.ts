@@ -25,4 +25,7 @@ getProfileRepos(){
   .pipe(map(res => res))
 
 }
+updateProfile(username:string){
+  this.username = username;
+}
 }

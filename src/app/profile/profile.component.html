@@ -1,12 +1,29 @@
 <form class="m-2">
     <div class="mb-3">
-      <label for="exampleFormControlInput"class="form-label">Your Github Username</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="e.g oscar9181">
-    </div>
 
-   <button type="submit" class="btn btn-primary btn-block">Search</button>
+        <form action="" class="search-form">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search git users with username"
+                [(ngModel)]="username"
+                name="username"
+                (keyup)="submitInput()"
+              />
+              <button
+                (click)="submitInput()"
+                type="submit"
+                class="btn btn-outline-success btn-hov"
+              >
+              Search<i class="fa fa-search"></i>
+        </button>
+      </div>
+    </form>
 
- </form>
+   
+
+ 
 
 <div *ngIf="profile">
     <div class="panel panel-default">
